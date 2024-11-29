@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="en"> 
+ <head> 
+  <title>Accessibility quiz</title> 
+  <meta charset="utf-8"> 
+  <meta name="description" content="quiz-for-accessibility"> 
+  <link rel="stylesheet" href="styles.css"> 
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+sans:400,700,800">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <style type="text/css" id="dcoder_stylesheet">*{box-sizing: border-box;}
+button{width: 50%; height: 35px; margin: 10px auto; background-color: black; color: white;}
+h1{font-size: 25px;}
+.inline{width: unset; margin: 0 0 5em 0 0; vertical-align: middle;}
+@media (prefers-reduced-motion: no-preference){*{scroll-behavior: smooth;}}
+input, textarea{background-color: #F5F5DC;}
+body{background-color: burlywood; margin: 0;}
+h2{text-align: center; padding-top: 80px;}
+input{height: 30px; }
+nav > ul > li:hover{ cursor: pointer;}
+.carlo{width: 60%; height: auto; border: 3px double white; blur-radius: 5px;}
+li > a{color: black; text-decoration: none; font-size: 20px;}
+nav > ul > li{display: block; justify-content: space-between;}
+label{display: block; margin: 0.5rem 0;}
+input, textarea, select{margin: 10px 0 0 0; width: 100%;}
+figcaption{text-transform: Uppercase; font-weight: 700;}
+.injured-players{gap: 10px; display: flex; flex-wrap: wrap; align-items: center; justify-content: center;}
+.imager{border: 4px solid black; width: max(200px, 30%); height: 220px; object-fit: cover;}
+#logo{ border: none; width: 75px; height: auto; padding-left: 10px; }
+footer{display: flex; justify-content: center; background-color: #a8d7f5;}
+nav > ul{display: flex; justify-content: space-evenly; align-items: center; padding-inline-start: 0; margin-block: 0; height: 100%; flex-wrap: wrap;}
+header{ background: linear-gradient(180deg, yellow, white, blue); height: 80px; width: 100%; display: flex; justify-content: space-between; align-item: center; top: 0; position: fixed;}</style></head> 
+ <body> 
+  <header> 
+   <img src="https://upload.wikimedia.org/wikipedia/en/thumb/5/56/Real_Madrid_CF.svg/1200px-Real_Madrid_CF.svg.png" id="logo"> 
+   <h1>Real Madrid</h1> 
+   <nav> 
+    <ul> 
+     <li><a href="#injured-players">Injured Players</a></li> 
+     <li><a href="#trophies">Trophies</a></li> 
+     <li><a href="#academy">Academy</a></li> 
+     <li><a href="#about-us">About us</a></li> 
+    </ul> 
+   </nav> 
+  </header> 
+  <main> 
+   <section role="region" aria-labelledby="players"> 
+    <h2 id="injured-players"> Our Injured Players</h2> 
+    <div class="injured players"> 
+     <figure> 
+      <figcaption>
+       #4 David Alaba
+      </figcaption> 
+      <img class="imager" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR305BFh0w7l8xrGFm8rPCOxAJ1j8qJEQR70QHqWZt1dqShgKa6QkqyG28Z&amp;s=10" alt="David Alaba"> 
+     </figure> 
+     <figure> 
+      <figcaption>
+       #11 Rodrygo Goes 
+      </figcaption> 
+      <img class="imager" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREWmiF-bzh3scYhPO_tX99AEwEDQDwK7T5CA&amp;usqp=CAU" alt="Rodrygo"> 
+     </figure> 
+     <figure> 
+      <figcaption>
+       #2 Dani Carvajal
+      </figcaption> 
+      <img class="imager" src="https://assets.laliga.com/squad/2024/t186/p88483/1024x1113/p88483_t186_2024_1_001_000.png" alt="Dani Carvajal"> 
+     </figure> 
+     <figure> 
+      <figcaption>
+       #7 Vinicius Jr
+      </figcaption> 
+      <img class="imager" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSPaEQ1CJcXmPghJDOsXJLZXz4wYItVmfOqOKFthxR1NectFwr1QdzG3QH5&amp;s=10" alt="Vinicius Junior"> 
+     </figure> 
+     <figure> 
+      <figcaption>
+       #6 Eduardo Camavinga
+      </figcaption> 
+      <img class="imager" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS9LTRmuJzxtXLiK8GMGj4YIPLVxV_eV3ZdK49yrPxCtiD81DD0L2bt-WW8&amp;s=10" alt="Camavinga"> 
+     </figure> 
+     <figure> 
+      <figcaption>
+       #3 Eder Militao
+      </figcaption> 
+      <img class="imager" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhV0fNIcvp2ssd_KXeI0YWFB4I4CUKk45kOBTp12BVP1LSSLkdZiANt9Q&amp;s=10" alt="Militao"> 
+     </figure> 
+    </div> 
+   </section> 
+   <section role="region" aria-labelledby="Trophies">
+     <h2 id="trophies">Our Trophies Under Carlo Ancelotti</h2>  
+     <figure>
+       <figcaption>Carlo Ancelotti,  Coach.</figcaption>  
+     <img class="carlo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAIQMNViemx9QKx3FDrproq5n7mSvg_8IpxQ-gaHUQGmR68dYCxxU8IBgW&amp;s=10" alt="Ancelotti">
+     </figure>
+     <p>Carlo Ancelotti has won: </p>
+     <fieldset>
+       <strong>Three(3) Champions League</strong>  
+       <ul>
+         <li>2014</li>
+         <li>2022</li>
+         <li>2024</li>
+       </ul>
+     </fieldset>
+     <fieldset>
+       <strong>Three(3) European Super cups</strong>  
+       <ul>
+         <li>2014</li>  
+         <li>2022</li>
+         <li>2024</li>
+       </ul>
+     </fieldset>
+     <fieldset>
+       <strong>Two(2) Club World Cups</strong> 
+       <ul>
+         <li>2014</li>
+         <li>2022</li>  
+       </ul> 
+     </fieldset>
+     <fieldset>
+       <strong>Two(2) Copa Del Rey</strong>  
+       <ul>
+         <li>2014</li> 
+         <li>2023</li> 
+       </ul>
+     </fieldset>
+     <fieldset>
+       <strong>Two(2) Spanish Super Cups</strong>  
+       <ul>
+         <li>2014</li>  
+          <li>2022</li>  
+       </ul>
+     </fieldset>
+   </section> 
+   <section role="region" aria-labelledby="Academy">
+     <h3 id="academy">Please fill in this form to register for our Academy</h3>  
+   <form id="myform" action="<form action=" mailto:midefx2@gmail.com" enctype="multipart/form-data" method="post">
+   <fieldset> 
+     <label for="name">Enter your Full Name: <input type="text" id="name" name="name"></label>  
+ <label for="date-of-birth">Enter your Date Of Birth: <input id="date-of-birth" name="date of birth" type="date"></label>
+<label for="email">Enter your Email: <input name="email" type="email" id="email"></label>
+ </fieldset>
+ <fieldset>
+  <strong>Choose your Gender:</strong>
+  <label for="male"> <input class="inline" checked id="male" value="male" name="gender" type="radio">Male</label>
+ <label for="female"> <input class="inline" id="female" value="female" name="gender" type="radio">Female</label>
+  </fieldset>
+  <fieldset>
+     <strong>what is your Position?</strong> 
+     <label for="position"><select id="position" name="position">
+       <option value="">Choose one</option>  
+       <option value="gk">Goal Keeper</option>
+       <option value="rb">Right-Back</option>
+       <option value="lb">Left-Back</option>  
+      <option value="cb">Center-Back </option>
+      <option vakue="rw">Right-winger</option>
+      <option value="lw">Left-winger</option>
+      <option value="cam">Central Attacking Midfielder</option>
+      <option value="dmf>Defensive Midfielder </option>
+      <option value=" amf">Attacking Midfielder</option>
+      <option value="cm">Central Midfielder</option>
+      <option value="st">Striker</option>
+     </select>
+  </label></fieldset>
+  <fieldset>
+    <strong>What best describes your abilities?</strong> 
+    <label for="speed"> <input class="inline" id="speed" name="speed" value="speed" type="checkbox">Speed</label> 
+ <label for="dribbling"> <input class="inline" id="dribbling" name="dribbling" type="checkbox" value="dribbling">Dribbling</label>
+  <label for="strength"> <input class="inline" id="strength" name="strength" type="checkbox" value="strength">Strength</label>
+  <label for="set-piece"> <input class="inline" value="set-piece" name="set-piece" id="set-piece" type="checkbox">Set Piece</label>
+  <label for="passes-and-crosses"> <input class="inline" id="passes-and-crosses" type="checkbox" value="passes and crosses" name="passes and crosses">Passes and Crosses</label>
+<label for="ball-control"> <input class="inline" id="ball-control" name="ball control" value="ball-control" type="checkbox">Ball Control</label>
+ <label for="shooting-and-heading"> <input class="inline" name="shooting heading" id="shooting-and-heading" value="shooting-and-padsing" type="checkbox">Shooting and Heading</label>
+  </fieldset>
+  <fieldset>
+    <strong>Who is your Favorite real Madrid player, and why?</strong>  
+<label for="textarea"> <textarea rows="10" name="textarea" id="textarea" cols="40"></textarea> </label>
+  
+</fieldset>
+ <button type="submit">Hala Madrid</button>
+ <div id="response"></div>
+   </form>
+   </section> 
+   <section role="region" aria-labelledby="About us"> 
+     <h3 id="about-us">About Real Madrid CF</h3>
+     <p>Real Madrid, founded in 1902, is one of the most successful football clubs in the world. The club's name was changed to Real Madrid in 1920, with the Spanish word "Real" meaning "royal" .</p>
+   <p>They've won a record 34 La Liga titles and 14 European Cup/Champions League titles. The 1950s and 60s were their most dominant periods, with the team winning five European Cups in a row .</p>
+   <p>In the 1980s, the team was led by the feared "La Quinta del Buitre" (The Vulture Cohort), which included players like Emilio Butragueño and Manolo Sanchís.</p>
+  <p>The 1990s saw a shift in power, with Barcelona dominating the league. However, Real Madrid won the Champions League in 1998 and 2000.</p>
+  <p>The 2000s saw the rise of the "Galacticos" era, with the team signing superstars like Luis Figo, Zinedine Zidane, and David Beckham.</p>
+  <p>Today, Real Madrid remains one of the biggest and most successful clubs in the world.</p>
+   </section> 
+  </main> 
+  <footer>
+    <adress>
+     Avenida de Concha Espina, nº 1, Madrid, 28036, Spain.<br>
+     Telephone no.: +34 913 984 300. <br>
+     Email address: atencionpublico@corp.realmadrid.com. <br>
+    </adress>  
+  </footer>
+ 
+<script type="text/javascript" id="dcoder_script">const form = document.getElementById('myForm');
+const responseDiv = document.getElementById('response');
+
+form.addEventListener('submit', (e) => {
+e.preventDefault();
+const fileInput = document.getElementById('fileInput');
+if (fileInput.files.length > 0) {
+responseDiv.innerText = 'Thanks, your response has been submitted!';
+} else {
+responseDiv.innerText = 'Please select a file to submit!';
+}
+setTimeout(() => {
+form.submit();
+}, 2000);
+});</script></body></html>
